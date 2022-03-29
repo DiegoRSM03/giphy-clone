@@ -1,0 +1,32 @@
+/* This file is a global customization preset */
+*, 
+*::before, 
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, span, h1, h2, h3, h4, h5, h6 {
+  font-family: "InterFace";
+  overflow-wrap: break-word;
+}
+
+input:focus, textarea:focus, button:focus {
+  outline: 0;
+  border: none;
+  box-shadow: none;
+}
