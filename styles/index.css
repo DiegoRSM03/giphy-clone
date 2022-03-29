@@ -31,6 +31,9 @@ img, picture, video, canvas, svg {
 input, button, textarea, select {
   font: inherit;
   border: none;
+}
+
+button, select {
   cursor: pointer;
 }
 
@@ -41,6 +44,10 @@ p, span, h1, h2, h3, h4, h5, h6 {
 p, span, h1, h2, h3, h4, h5, h6, input, button, textarea, select {
   color: white;
   font-family: "InterFace";
+}
+
+input::placeholder, textarea::placeholder {
+  color: gray;
 }
 
 input:focus, textarea:focus, button:focus {
