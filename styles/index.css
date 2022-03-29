@@ -7,6 +7,18 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #121212;
+
+  width: 1040px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+body:nth-child(n) {
+  width: 100%;
+}
+
 html, body {
   height: 100%;
 }
@@ -18,15 +30,25 @@ img, picture, video, canvas, svg {
 
 input, button, textarea, select {
   font: inherit;
+  border: none;
+  cursor: pointer;
 }
 
 p, span, h1, h2, h3, h4, h5, h6 {
-  font-family: "InterFace";
   overflow-wrap: break-word;
+}
+
+p, span, h1, h2, h3, h4, h5, h6, input, button, textarea, select {
+  color: white;
+  font-family: "InterFace";
 }
 
 input:focus, textarea:focus, button:focus {
   outline: 0;
   border: none;
   box-shadow: none;
+}
+
+ul li {
+  list-style: none;
 }

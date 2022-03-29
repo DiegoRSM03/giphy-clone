@@ -1,16 +1,20 @@
-import MainLayout from "../layouts/MainLayout"
+import { MainLayout } from "/layouts"
+import { ThemeProvider } from "styled-components"
+import globalTheme from "../styles/globalTheme"
 
 const Home = () => {
   return (<>
-    <span>Holahola</span>
+
   </>)
 }
 
 Home.getLayout = page => {
   return (
-    <MainLayout>
-      { page }
-    </MainLayout>
+    <ThemeProvider theme={ globalTheme }>
+      <MainLayout>
+          { page }
+      </MainLayout>
+    </ThemeProvider>
   )
 }
 

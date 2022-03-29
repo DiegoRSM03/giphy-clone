@@ -1,17 +1,23 @@
 import Head from "next/head"
+import { Navbar, Footer } from "/components"
+import * as S from "/styles/layouts/MainLayout.styles.js"
 
-const MainLayout = ({ children }) => {
+export const MainLayout = ({ children }) => {
   return (<>
-    <Head>
-      <title>Giphy Clone</title>
-      <meta name="description" content="Home Page" />
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+    <S.MainLayout>
+      <Head>
+        <title>Giphy Clone</title>
+        <meta name="description" content="Home Page" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      
+      <Navbar />
 
-    <main>
-      { children }
-    </main>
+      <S.MainContent>
+        { children }
+      </S.MainContent>
+
+      <Footer />
+    </S.MainLayout>
   </>)
 }
-
-export default MainLayout
