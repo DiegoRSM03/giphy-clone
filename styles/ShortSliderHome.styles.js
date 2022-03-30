@@ -3,7 +3,7 @@ import { MdNavigateNext } from "react-icons/md"
 
 export const ShortSliderHome = styled.div`
   display: grid;
-  grid-template-columns: max-content auto max-content;
+  grid-template-columns: max-content 1fr max-content;
   grid-template-rows: auto;
   grid-template-areas: 
     "sectionInfo  .           allGifsLink"
@@ -23,6 +23,7 @@ export const SectionInfo = styled.div`
 export const SectionIconContainer = styled.span`
   color: ${ props => props.color ? props.color : "white" };
   font-size: 1.5rem;
+  height: 25px;
 `
 
 export const SectionName = styled.span`
@@ -30,7 +31,6 @@ export const SectionName = styled.span`
   font-weight: bold;
   font-size: ${ props => props.theme.fontSize.title };
 `
-
 
 export const AllGifsLink = styled.div`
   grid-area: allGifsLink;

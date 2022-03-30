@@ -6,7 +6,7 @@ export const GifSlider = styled.div`
 
   width: 100%;
   height: 150px;
-  overflow-x: hidden;
+  overflow: hidden;
 `
 
 export const GifSliderOverflow = styled.div`
@@ -21,6 +21,8 @@ export const GifSliderOverflow = styled.div`
 
   width: auto;
   height: 100%;
+  transition: .3s ease 0s;
+  transform: translateX(0%);
 `
 
 const commonArrowStyles = css`
@@ -38,16 +40,29 @@ const commonArrowStyles = css`
 
   width: 2.5rem;
   height: 100%;
+  transition: .2s linear 0s;
+
+  &:hover {
+    color: ${ props => props.theme.color.white };
+  }
 `
 
 export const ArrowPrevious = styled.span`
   ${ commonArrowStyles }
   left: 0;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0))
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0));
+
+  &:hover {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  }
 `
 
 export const ArrowNext = styled.span`
   ${ commonArrowStyles }
   right: 0;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0))
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0));
+
+  &:hover {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  }
 `

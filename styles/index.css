@@ -24,8 +24,7 @@ html, body {
 }
 
 img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
+  display: inline-block;
 }
 
 input, button, textarea, select {

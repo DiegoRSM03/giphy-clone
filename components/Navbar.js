@@ -24,7 +24,7 @@ export const Navbar = () => {
 
       <S.NavItemList>
         { navItemLabelList.map(item => (
-          <Link href={ item.goTo }>
+          <Link href={ item.goTo } key={ item.goTo }>
             <S.NavItem>
               <S.NavItemLabel>{ item.label }</S.NavItemLabel>
               <S.NavItemBotLine color={ item.bottomColor } />

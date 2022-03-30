@@ -70,10 +70,10 @@ export async function getStaticProps () {
   const API_KEY = process.env.API_KEY
 
   const giphyRequests = [
-    giphyApi.get(`/gifs/trending?api_key=${API_KEY}&limit=10`),
-    giphyApi.get(`/gifs/search?api_key=${API_KEY}&limit=10&q=artists`),
-    giphyApi.get(`/gifs/search?api_key=${API_KEY}&limit=10&q=football`),
-    giphyApi.get(`/gifs/search?api_key=${API_KEY}&limit=10&q=dogs`)
+    giphyApi.get(`/gifs/trending?api_key=${API_KEY}&bundle=low_bandwidth&limit=15`),
+    giphyApi.get(`/gifs/search?api_key=${API_KEY}&limit=15&bundle=low_bandwidth&q=artists`),
+    giphyApi.get(`/gifs/search?api_key=${API_KEY}&limit=15&bundle=low_bandwidth&q=soccer`),
+    giphyApi.get(`/gifs/search?api_key=${API_KEY}&limit=15&bundle=low_bandwidth&q=dogs`)
   ]
 
   const requestsResult = await Promise.allSettled(giphyRequests)
