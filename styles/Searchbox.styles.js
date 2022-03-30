@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const Searchbox = styled.div`
   display: flex;
   height: 53px;
-  margin-top: 1rem;
+  margin: 1rem 0 .5rem 0;
 `
 
 export const TextFieldSearch = styled.input`

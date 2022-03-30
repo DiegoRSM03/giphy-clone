@@ -12,7 +12,6 @@ export const MainLayout = ({ children }) => {
       </Head>
       
       <Navbar />
-
       <Searchbox />
 
       <S.MainContent>

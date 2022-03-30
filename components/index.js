@@ -1,3 +1,5 @@
 export * from "./Navbar"
 export * from "./SearchBox"
+export * from "./ShortSliderHome"
+export * from "./GifSlider"
 export * from "./Footer/Footer"
