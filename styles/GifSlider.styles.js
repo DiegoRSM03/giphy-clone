@@ -12,7 +12,7 @@ export const GifSlider = styled.div`
 export const GifSliderOverflow = styled.div`
   display: flex;
   justify-content: flex-start;
-  gap: .5rem;
+  gap: .4rem;
 
   position: absolute;
   z-index: 2;
