@@ -2,9 +2,9 @@ import Link from "next/link"
 import { GifSlider } from "/components"
 import * as S from "/styles/ShortSliderHome.styles.js"
 
-export const ShortSliderHome = ({ label, icon, iconColor, seeMorePath, gifs }) => {
+export const ShortSliderHome = ({ label, icon, iconColor, seeMorePath, size = "s", gifs }) => {
   return (<>
-    <S.ShortSliderHome>
+    <S.ShortSliderHome size={size}>
       <S.SectionInfo>
         <S.SectionIconContainer color={ iconColor }>{ icon }</S.SectionIconContainer>
         <S.SectionName>{ label }</S.SectionName>
@@ -17,7 +17,7 @@ export const ShortSliderHome = ({ label, icon, iconColor, seeMorePath, gifs }) =
         </S.AllGifsLink>
       </Link>
 
-      <GifSlider gifs={gifs} />
+      <GifSlider gifs={gifs} size={size} />
     </S.ShortSliderHome>
   </>)
 }

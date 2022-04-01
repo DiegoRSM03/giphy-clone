@@ -34,6 +34,7 @@ const Home = ({ trendingGifs, artistsGifs, footballGifs, dogsGifs }) => {
         icon={<TiFlashOutline />}
         iconColor="#FD646C"
         seeMorePath="/artists"
+        size="m"
         gifs={artistsGifs}
       />
 
@@ -71,7 +72,7 @@ export async function getStaticProps () {
 
   const giphyRequests = [
     giphyApi.get(`/gifs/trending?api_key=${API_KEY}&bundle=low_bandwidth&limit=15`),
-    giphyApi.get(`/gifs/search?api_key=${API_KEY}&limit=15&bundle=low_bandwidth&q=artists`),
+    giphyApi.get(`/stickers/search?api_key=${API_KEY}&limit=15&bundle=low_bandwidth&q=artists`),
     giphyApi.get(`/gifs/search?api_key=${API_KEY}&limit=15&bundle=low_bandwidth&q=soccer`),
     giphyApi.get(`/gifs/search?api_key=${API_KEY}&limit=15&bundle=low_bandwidth&q=dogs`)
   ]

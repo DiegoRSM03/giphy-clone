@@ -5,7 +5,7 @@ export const GifSlider = styled.div`
   position: relative;
 
   width: 100%;
-  height: 150px;
+  height: ${ props => props.size == "s" ? "150px" : "250px" };
   overflow: hidden;
 `
 

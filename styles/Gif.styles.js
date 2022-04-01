@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const Gif = styled.div`
   position: relative;
+  width: auto;
   height: 100%;
   border-radius: ${ props => props.theme.borderRadius.box };
   overflow: hidden;
@@ -11,6 +12,14 @@ export const Gif = styled.div`
 export const SmallGif = styled.img`
   width: auto;
   height: 100%;
+
+  background-image:
+    linear-gradient(45deg, #0D0D0D 25%, transparent 25%), 
+    linear-gradient(135deg, #0D0D0D 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #0D0D0D 75%),
+    linear-gradient(135deg, transparent 75%, #0D0D0D 75%);
+  background-size: 50px 50px;
+  background-position:0 0, 25px 0, 25px -25px, 0px 25px; 
 `
 
 export const ActionIcons = styled.div`

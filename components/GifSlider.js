@@ -3,7 +3,7 @@ import { MdNavigateBefore, MdNavigateNext } from "react-icons/md"
 import { Gif } from "/components"
 import * as S from "/styles/GifSlider.styles.js"
 
-export const GifSlider = ({ gifs }) => {
+export const GifSlider = ({ gifs, size }) => {
   const [ sliderViewPx, setSliderViewPx ] = useState(0)
   const [ shouldHideNextArrow, setShouldHideNextArrow ] = useState(false)
   const sliderRef = useRef(null)
@@ -34,7 +34,7 @@ export const GifSlider = ({ gifs }) => {
   }
 
   return (
-    <S.GifSlider>
+    <S.GifSlider size={size}>
       { sliderViewPx < 0 && <S.ArrowPrevious onClick={slidePrevChunk}>
         <MdNavigateBefore />
       </S.ArrowPrevious> }
