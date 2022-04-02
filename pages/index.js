@@ -1,12 +1,8 @@
-import { ThemeProvider } from "styled-components"
-
 import { FiTrendingUp } from "react-icons/fi"
 import { TiFlashOutline } from "react-icons/ti"
 import { MdSportsSoccer } from "react-icons/md"
 import { BiBone } from "react-icons/bi"
 
-import { MainLayout } from "/layouts"
-import globalTheme from "/styles/globalTheme"
 import { giphyApi } from "/api"
 import { ShortSliderHome } from "/components"
 import * as S from "/styles/Home.styles.js"
@@ -55,16 +51,6 @@ const Home = ({ trendingGifs, artistsGifs, footballGifs, dogsGifs }) => {
       />
     </S.Home>
   </>)
-}
-
-Home.getLayout = page => {
-  return (
-    <ThemeProvider theme={ globalTheme }>
-      <MainLayout>
-        { page }
-      </MainLayout>
-    </ThemeProvider>
-  )
 }
 
 export const getStaticProps = async () => {

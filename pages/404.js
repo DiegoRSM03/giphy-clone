@@ -1,10 +1,8 @@
 import Masonry from "react-responsive-masonry"
-import { ThemeProvider } from "styled-components"
-import { NotFoundLayout } from "/layouts"
 
-import { Gif } from "/components"
-import globalTheme from "/styles/globalTheme"
+import { NotFoundLayout } from "/layouts"
 import { giphyApi } from "/api"
+import { Gif } from "/components"
 import * as S from "/styles/404.styles.js"
 
 const NotFound = ({ trendingGifs }) => {
@@ -34,11 +32,9 @@ const NotFound = ({ trendingGifs }) => {
 
 NotFound.getLayout = page => {
   return (
-    <ThemeProvider theme={ globalTheme }>
-      <NotFoundLayout>
-        { page }
-      </NotFoundLayout>
-    </ThemeProvider>
+    <NotFoundLayout>
+      { page }
+    </NotFoundLayout>
   )
 }
 
