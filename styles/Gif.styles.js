@@ -2,16 +2,17 @@ import styled from "styled-components"
 
 export const Gif = styled.div`
   position: relative;
-  width: auto;
-  height: 100%;
-  border-radius: ${ props => props.theme.borderRadius.box };
+
+  width: ${ props => props.masonryMode ? "100%" : "auto"};
+  height: ${ props => props.masonryMode ? "auto" : "100%"};
+
   overflow: hidden;
   cursor: pointer;
 `
 
 export const SmallGif = styled.img`
-  width: auto;
-  height: 100%;
+  width: ${ props => props.masonryMode ? "100%" : "auto"};
+  height: ${ props => props.masonryMode ? "auto" : "100%"};
 
   background-image:
     linear-gradient(45deg, #0D0D0D 25%, transparent 25%), 
@@ -20,6 +21,7 @@ export const SmallGif = styled.img`
     linear-gradient(135deg, transparent 75%, #0D0D0D 75%);
   background-size: 50px 50px;
   background-position:0 0, 25px 0, 25px -25px, 0px 25px; 
+  border-radius: ${ props => props.theme.borderRadius.box };
 `
 
 export const ActionIcons = styled.div`

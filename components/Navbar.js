@@ -14,13 +14,15 @@ const navItemLabelList = [
 export const Navbar = () => {
   return (<>
     <S.Navbar>
-      <Image 
-        src="/logo.gif" 
-        alt="Giphy's company logo"
-        width="165"
-        height="35"
-        loading="eager"
-      />
+      <Link href="/">
+        <S.NavbarLogo 
+          src="/logo.gif" 
+          alt="Giphy's company logo"
+          width="165"
+          height="35"
+          loading="eager"
+        />
+      </Link>
 
       <S.NavItemList>
         { navItemLabelList.map(item => (

@@ -61,18 +61,18 @@ Home.getLayout = page => {
   return (
     <ThemeProvider theme={ globalTheme }>
       <MainLayout>
-          { page }
+        { page }
       </MainLayout>
     </ThemeProvider>
   )
 }
 
-export async function getStaticProps () {
+export const getStaticProps = async () => {
   const API_KEY = process.env.API_KEY
 
   const giphyRequests = [
     giphyApi.get(`/gifs/trending?api_key=${API_KEY}&bundle=low_bandwidth&limit=15`),
-    giphyApi.get(`/stickers/search?api_key=${API_KEY}&limit=15&bundle=low_bandwidth&q=artists`),
+    giphyApi.get(`/stickers/trending?api_key=${API_KEY}&bundle=low_bandwidth&limit=15`),
     giphyApi.get(`/gifs/search?api_key=${API_KEY}&limit=15&bundle=low_bandwidth&q=soccer`),
     giphyApi.get(`/gifs/search?api_key=${API_KEY}&limit=15&bundle=low_bandwidth&q=dogs`)
   ]
@@ -90,7 +90,8 @@ export async function getStaticProps () {
       artistsGifs,
       footballGifs,
       dogsGifs
-    }
+    },
+    revalidate: (60 * 60 * 12)
   }
 }
 

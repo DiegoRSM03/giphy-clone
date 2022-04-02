@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import Image from "next/image"
 import { BsThreeDotsVertical } from "react-icons/bs"
 
 export const Navbar = styled.nav`
@@ -7,6 +8,10 @@ export const Navbar = styled.nav`
   justify-content: space-between;
 
   margin-top: 1.3rem;
+`
+
+export const NavbarLogo = styled(Image)`
+  cursor: pointer;
 `
 
 export const NavItemList = styled.ul`
