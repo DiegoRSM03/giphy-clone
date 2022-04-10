@@ -1,5 +1,5 @@
 import { IoSearchSharp } from "react-icons/io5"
-import * as S from "/styles/Searchbox.styles.js"
+import * as S from "/styles/components/Searchbox.styles.js"
 
 export const Searchbox = () => {
   return (

@@ -1,9 +1,8 @@
 import Masonry from "react-responsive-masonry"
-
 import { NotFoundLayout } from "/layouts"
 import { giphyApi } from "/api"
 import { Gif } from "/components"
-import * as S from "/styles/404.styles.js"
+import * as S from "/styles/pages/404.styles.js"
 
 const NotFound = ({ trendingGifs }) => {
   return (

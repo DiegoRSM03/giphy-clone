@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { GifSlider } from "/components"
-import * as S from "/styles/ShortSliderHome.styles.js"
+import * as S from "/styles/components/ShortSliderHome.styles.js"
 
 export const ShortSliderHome = ({ label, icon, iconColor, seeMorePath, size = "s", gifs }) => {
   return (<>

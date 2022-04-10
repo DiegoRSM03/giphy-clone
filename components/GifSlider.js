@@ -1,7 +1,7 @@
 import { useState, useRef } from "react"
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md"
 import { Gif } from "/components"
-import * as S from "/styles/GifSlider.styles.js"
+import * as S from "/styles/components/GifSlider.styles.js"
 
 export const GifSlider = ({ gifs, size }) => {
   const [ sliderViewPx, setSliderViewPx ] = useState(0)

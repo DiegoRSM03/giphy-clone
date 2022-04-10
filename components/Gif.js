@@ -1,7 +1,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { HiLink, HiHeart } from "react-icons/hi"
-import * as S from "/styles/Gif.styles.js"
+import * as S from "/styles/components/Gif.styles.js"
 
 export const Gif = ({ gifInfo, masonryMode }) => {
   const [ shouldDisplayActions, setShouldDisplayActions ] = useState(false)

@@ -6,7 +6,7 @@ export const MainLayout = ({ children }) => {
   return (<>
     <S.MainLayout>
       <Head>
-        <title>GIPHY - Clon</title>
+        <title>GIPHY - Be Animated</title>
         <meta name="description" content="Home Page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

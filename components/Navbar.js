@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ImUser } from "react-icons/im"
-import * as S from "/styles/Navbar.styles.js"
+import * as S from "/styles/components/Navbar.styles.js"
 
 const navItemLabelList = [
   { label: "Reactions", bottomColor: "#05C7FF", goTo: "/reactions" }, 

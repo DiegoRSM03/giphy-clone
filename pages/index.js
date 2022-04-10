@@ -5,7 +5,7 @@ import { BiBone } from "react-icons/bi"
 
 import { giphyApi } from "/api"
 import { ShortSliderHome } from "/components"
-import * as S from "/styles/Home.styles.js"
+import * as S from "/styles/pages/Home.styles.js"
 
 const Home = ({ trendingGifs, artistsGifs, footballGifs, dogsGifs }) => {
   return (<>
