@@ -40,6 +40,8 @@ p, span, h1, h2, h3, h4, h5, h6 {
 p, span, h1, h2, h3, h4, h5, h6, input, button, textarea, select, a {
   color: white;
   font-family: "InterFace";
+  font-size: 1rem;
+  line-height: 1;
 }
 
 input::placeholder, textarea::placeholder {
